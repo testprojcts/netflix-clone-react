@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Header.css';
 
 const Header = () => {
+  // Add a transition and background color when the header passes a height of 100px
   const [show, handleShow] = useState(false);
 
   useEffect(() => {
