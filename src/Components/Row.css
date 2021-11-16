@@ -33,3 +33,8 @@
 .row__poster_large:hover {
   transform: scale(1.09);
 }
+
+.row__title {
+  font-size: 24px;
+  font-weight: 700;
+}

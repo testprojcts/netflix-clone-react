@@ -19,7 +19,7 @@ const Row = ({ title, fetchURL, isLargeRow }) => {
 
   return (
     <div className='row'>
-      <h3>{title}</h3>
+      <h3 className='row__title'>{title}</h3>
 
       {/* Container with Posters */}
       <div className='row__posters'>
