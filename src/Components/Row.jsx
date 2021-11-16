@@ -4,7 +4,7 @@ import './Row.css';
 
 const base_url = 'https://image.tmdb.org/t/p/original/';
 
-const Row = ({ title, fetchURL }) => {
+const Row = ({ title, fetchURL, isLargeRow }) => {
   const [movies, setMovies] = useState([]);
 
   // A React Snippet of code the runs based on a condition
@@ -17,22 +17,23 @@ const Row = ({ title, fetchURL }) => {
     fetchData();
   }, [fetchURL]);
 
-  console.log(movies);
-
   return (
     <div className='row'>
       <h3>{title}</h3>
+
+      {/* Container with Posters */}
       <div className='row__posters'>
         {movies.map((movie) => (
           <img
-            src={`${base_url}${movie.poster_path}`}
+            src={`${base_url}${
+              isLargeRow ? movie.poster_path : movie.backdrop_path
+            }`}
             alt={movie.name}
             key={movie.id}
-            className='row__poster'
+            className={`row__poster ${isLargeRow && 'row__poster_large'}`}
           />
         ))}
       </div>
-      {/* Container with Posters */}
     </div>
   );
 };

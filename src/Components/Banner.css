@@ -1,0 +1,21 @@
+.banner {
+  color: #fff;
+  object-fit: contain;
+  height: 448px;
+  background-repeat: no-repeat;
+  object-position: center;
+  margin-bottom: 30px;
+}
+
+.banner__contents {
+  margin-left: 30px;
+  padding-top: 140px;
+  height: 190px;
+}
+
+.banner__title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}

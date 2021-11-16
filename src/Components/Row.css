@@ -1,3 +1,7 @@
+.row {
+  margin-left: 30px;
+}
+
 .row__posters {
   display: flex;
   overflow-y: hidden;
@@ -14,10 +18,18 @@
   object-fit: contain;
   max-height: 100px;
   transition: transform 450ms;
-  margin-right: 7px;
+  margin-right: 10px;
 }
 
 .row__poster:hover {
   transform: scale(1.08);
   cursor: pointer;
+}
+
+.row__poster_large {
+  max-height: 230px;
+}
+
+.row__poster_large:hover {
+  transform: scale(1.09);
 }
