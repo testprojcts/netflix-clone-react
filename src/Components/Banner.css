@@ -12,7 +12,7 @@
   margin-left: 30px;
   padding-top: 260px;
   height: 190px;
-  margin-bottom: 350px;
+  margin-bottom: 210px;
 }
 
 .banner__title {
@@ -50,11 +50,11 @@
 }
 
 .banner__fade_bottom {
-  height: 128.4px;
+  height: 140.4px;
   background-image: linear-gradient(
     180deg,
     transparent,
-    rgba(3, 3, 3, 0.856),
+    rgba(3, 3, 3, 0.733),
     rgb(15, 15, 15)
   );
 }

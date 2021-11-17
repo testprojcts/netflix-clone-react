@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
+import './responsive.css';
 
 const Header = () => {
   // Add a transition and background color when the header passes a height of 100px

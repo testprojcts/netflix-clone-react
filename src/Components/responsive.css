@@ -1,0 +1,147 @@
+@media screen and (max-width: 480px) {
+  .header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+  }
+
+  .header__logo {
+    width: 80px;
+    object-fit: contain;
+    height: 100%;
+  }
+
+  .header__avatar {
+    width: 30px;
+    object-fit: contain;
+  }
+
+  .header__black {
+    background-color: rgb(15, 15, 15);
+  }
+
+  .header__logo:hover,
+  .header__avatar:hover {
+    cursor: pointer;
+  }
+
+  /* Banner */
+  .banner {
+    color: #fff;
+    object-fit: contain;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-position: center;
+    margin-bottom: 30px;
+  }
+
+  .banner__contents {
+    margin-left: 20px;
+    padding-top: 160px;
+    height: 140px;
+    margin-bottom: 100px;
+  }
+
+  .banner__title {
+    font-size: 26px;
+    /* line-height: 1.2; */
+    padding-bottom: 0.6rem;
+    font-weight: 700;
+  }
+
+  .banner__description {
+    width: 100%;
+    padding-top: 10px;
+    font-size: 10px;
+    max-width: 330px;
+    height: 140px;
+    text-align: left;
+  }
+
+  .banner__buttons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .banner__button {
+    cursor: pointer;
+    color: #fff;
+    outline: 0;
+    border: 0;
+    font-weight: 700;
+    border-radius: 3px;
+    padding: 8px 18px;
+    margin: 0 5px;
+    background-color: rgba(51, 51, 51, 0.685);
+    font-size: 14px;
+  }
+
+  .banner__button:hover {
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white;
+    transition: all 0.25s linear;
+  }
+
+  .banner__fade_bottom {
+    height: 140.4px;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(3, 3, 3, 0.733),
+      rgb(15, 15, 15)
+    );
+  }
+
+  /* Rows */
+  .row {
+    margin-left: 20px;
+  }
+
+  .row__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 10px;
+    margin: 6px 0;
+  }
+
+  .row__posters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .row__poster {
+    width: 100%;
+    object-fit: contain;
+    max-height: 80px;
+    transition: transform 450ms;
+    margin-right: 10px;
+  }
+
+  .row__poster:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+  }
+
+  .row__poster_large {
+    max-height: 150px;
+  }
+
+  .row__poster_large:hover {
+    transform: scale(1.08);
+  }
+
+  .row__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+}
